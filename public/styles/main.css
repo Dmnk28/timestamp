@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  min-height: 90vh;
+  background-color: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
+}
+
+main {
+  margin: 3rem;
+  padding: 1.5rem 2.5rem;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 2rem;
+}
+
+a {
+  color: hsl(150, 100%, 66%);
+  text-decoration: none;
+}
+/* 
+$clr-primary: hsl(193, 38%, 86%);
+$clr-secondary: hsl(150, 100%, 66%);
+$clr-text-bgr: hsl(217, 19%, 24%);
+$clr-bgr: hsl(218, 23%, 16%);
+$clr-tertiary: hsl(217, 19%, 38%); */
