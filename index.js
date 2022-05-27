@@ -37,7 +37,6 @@ const timeMiddleware = (req, res, next) => {
     res.locals.unix  = Date.parse(passedValue);
     res.locals.utc   = new Date(passedValue).toUTCString();
   }
-  console.log(req.params);
   next();
 }
 
@@ -54,7 +53,7 @@ const timeHandler = (req, res) => {
     utc: res.locals.utc});
 }
 
-app.get('/', loggingMiddleware, rootHandler);
+app.get('/', /*loggingMiddleware,*/ rootHandler);
 app.use('/public', express.static(publicPath));
 app.get('/api/:time?', timeMiddleware, timeHandler)
 
